@@ -4,13 +4,14 @@
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
     <PackageReference Include="SimpleInjector" Version="4.7.1" />
     <PackageReference Include="SimpleInjector.Integration.ServiceCollection" Version="4.7.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AzureFunctionDemo.SharedKernel\AzureFunctionDemo.SharedKernel.csproj" />
+    <ProjectReference Include="..\AzureFunctionDemo.SharedKernel\AzureFunctionDemo.ApplicationService.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

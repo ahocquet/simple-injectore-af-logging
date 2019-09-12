@@ -1,5 +1,4 @@
 using AzureFunctionDemo.ServiceCollection.Infrastructure;
-using AzureFunctionDemo.SharedKernel;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,9 +10,6 @@ namespace AzureFunctionDemo.ServiceCollection.Infrastructure
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddTransient<Speaker>();
-            builder.Services.AddTransient<GenericSpeaker>();
-            builder.Services.AddTransient<FactorySpeaker>();
         }
     }
 }

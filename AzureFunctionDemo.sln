@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionDemo.SimpleInjector", "AzureFunctionDemo.SimpleInjector\AzureFunctionDemo.SimpleInjector.csproj", "{D6B91444-6841-4F78-BCCF-E6F1F7277E89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.SimpleInjector", "AzureFunctionDemo.SimpleInjector\AzureFunctionDemo.SimpleInjector.csproj", "{D6B91444-6841-4F78-BCCF-E6F1F7277E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionDemo.ServiceCollection", "AzureFunctionDemo.ServiceCollection\AzureFunctionDemo.ServiceCollection.csproj", "{351C18CD-A273-47FE-A4F5-475C1969663D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.ServiceCollection", "AzureFunctionDemo.ServiceCollection\AzureFunctionDemo.ServiceCollection.csproj", "{351C18CD-A273-47FE-A4F5-475C1969663D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionDemo.SharedKernel", "AzureFunctionDemo.SharedKernel\AzureFunctionDemo.SharedKernel.csproj", "{A300FC6D-AE7A-4D70-AA8B-9C6B222BE8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.ApplicationService", "AzureFunctionDemo.SharedKernel\AzureFunctionDemo.ApplicationService.csproj", "{A300FC6D-AE7A-4D70-AA8B-9C6B222BE8EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
