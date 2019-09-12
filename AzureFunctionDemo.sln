@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.SimpleInj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.ServiceCollection", "AzureFunctionDemo.ServiceCollection\AzureFunctionDemo.ServiceCollection.csproj", "{351C18CD-A273-47FE-A4F5-475C1969663D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.ApplicationService", "AzureFunctionDemo.SharedKernel\AzureFunctionDemo.ApplicationService.csproj", "{A300FC6D-AE7A-4D70-AA8B-9C6B222BE8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionDemo.ApplicationService", "AzureFunctionDemo.ApplicationService\AzureFunctionDemo.ApplicationService.csproj", "{A300FC6D-AE7A-4D70-AA8B-9C6B222BE8EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
