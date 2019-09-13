@@ -1,5 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
+using AzureFunctionDemo.ApplicationService.MediatR;
+using AzureFunctionDemo.ApplicationService.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

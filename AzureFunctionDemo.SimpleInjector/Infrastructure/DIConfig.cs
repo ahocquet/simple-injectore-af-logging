@@ -4,6 +4,9 @@ using System.Linq;
 using System.Reflection;
 using AzureFunctionDemo.ApplicationService;
 using AzureFunctionDemo.ApplicationService.Features.User;
+using AzureFunctionDemo.ApplicationService.Logging;
+using AzureFunctionDemo.ApplicationService.MediatR;
+using AzureFunctionDemo.ApplicationService.Repository;
 using AzureFunctionDemo.SimpleInjector.Infrastructure;
 using MediatR;
 using MediatR.Pipeline;
@@ -34,7 +37,7 @@ namespace AzureFunctionDemo.SimpleInjector.Infrastructure
                              .UseSimpleInjector(Container);
         }
 
-        public static void RegisterMediatR(Container container)
+        private static void RegisterMediatR(Container container)
         {
             var assemblies = GetAssemblies().ToArray();
 
@@ -56,7 +59,7 @@ namespace AzureFunctionDemo.SimpleInjector.Infrastructure
                 typeof(RequestPostProcessorBehavior<,>),
             });
 
-            container.Collection.Register(typeof(IRequestPreProcessor<>), new[] {typeof(GenericRequestPreProcessor<>)});
+            container.Collection.Register(typeof(IRequestPreProcessor<>), Enumerable.Empty<Type>());
             container.Collection.Register(typeof(IRequestPostProcessor<,>), Enumerable.Empty<Type>());
 
             container.Register(() => new ServiceFactory(container.GetInstance), Lifestyle.Singleton);

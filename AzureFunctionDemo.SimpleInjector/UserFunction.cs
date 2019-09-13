@@ -14,7 +14,7 @@ namespace AzureFunctionDemo.SimpleInjector
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "GetUser/{id}")]
             string id,
             ILogger log)
-            => Function.Handle<Get.Query, string>(log, id);
+            => Dispatcher.Handle<Get.Query, string>(log, id);
 
 
         [FunctionName(nameof(CreateUser))]
@@ -22,6 +22,6 @@ namespace AzureFunctionDemo.SimpleInjector
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)]
             User user,
             ILogger log)
-            => Function.Handle<Create.Command, User>(log, user);
+            => Dispatcher.Handle<Create.Command, User>(log, user);
     }
 }

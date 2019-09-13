@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using AutoBogus;
 using Microsoft.Extensions.Logging;
 
-namespace AzureFunctionDemo.ApplicationService
+namespace AzureFunctionDemo.ApplicationService.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -25,7 +25,7 @@ namespace AzureFunctionDemo.ApplicationService
 
         public Task Insert(T entity)
         {
-            _logger.LogInformation($"Inserting {_typeName} with into repository: {entity}");
+            _logger.LogInformation($"Inserting {_typeName} into repository: {entity}");
             return Task.CompletedTask;
         }
     }

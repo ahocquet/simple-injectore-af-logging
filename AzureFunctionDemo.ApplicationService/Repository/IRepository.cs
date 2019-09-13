@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace AzureFunctionDemo.ApplicationService
+namespace AzureFunctionDemo.ApplicationService.Repository
 {
     public interface IRepository<T> where T : class
     {

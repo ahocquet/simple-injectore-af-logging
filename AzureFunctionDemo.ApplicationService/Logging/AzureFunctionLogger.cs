@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace AzureFunctionDemo.ApplicationService
+namespace AzureFunctionDemo.ApplicationService.Logging
 {
     public class AzureFunctionLogger : ILogger
     {
